@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>CommonVoice for the Hue Variant of Vietnamese</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Xây Dựng</h2>
+					<h2>Kỹ Thuật Trí Tuệ Nhân Tạo</h2>
+					<h2 style="color: rgb(0, 153, 255)">Cho Tiếng Huế</h2>
+					<!--<h3>(AI Technology for Tiếng Huế)</h3> -->
+					<p>
+						Lê Viết Chung trình bày
+					</p>
+					<p><small>(Xin nhấn vào <em style="color: rgb(0, 153, 255)">&nbsp;&nbsp;>&nbsp;&nbsp;</em> ở góc phải phía dưới để bắt đầu)</small></p>
+				</section>
+
+				<section>
+					<h2>Mục Đích</h2>
+					<ul>
+						<li>Hiện tại những kỹ thuật AI như Google Translate, Apple Translate và OpenAI có thể “Nghe” và “Dịch” tiếng Việt rất chính xác. Nhưng khi cần xử lý tiếng địa phương như tiếng Huế thì những kỹ thuật đó vẫn chưa có đủ dữ kiện.</li>
+						<li style="color: rgb(0, 153, 255)">Mục đích của chương trình này là để Xây dựng “Tập Dữ Liệu cho Tiếng Huế” (AI Dataset for Tiếng Huế)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Xây dựng “Tập Dữ Liệu cho Tiếng Huế”</h2>
+					<ul>
+						<li><b>Thu âm giọng nói của càng nhiều người Huế càng tốt</b>: bắt đầu từ 10 người, 100 người, đến 1,000 người, v.v. để thành lập một cộng đồng người Huế cho chương trình “crowdsourced” này.</li>
+						<li>Dùng chương trình 
+							<a href="https://commonvoice.mozilla.org/vi" onclick="window.open(this.href, 'popup', 'width=600,height=400,left=200,top=200,resizable=yes'); return false;">
+								Common Voice
+							</a>
+							 của Mozilla để thu âm và tích lũy những câu nói tiếng Huế điển hình thu thập từ cuốn 
+							<a href="https://www.google.com/books/edition/T%E1%BB%AB_%C4%91i%E1%BB%83n_ti%E1%BA%BFng_Hu%E1%BA%BF/B8NkAAAACAAJ?hl=en" onclick="window.open(this.href, 'popup', 'width=600,height=400,left=200,top=200,resizable=yes'); return false;">
+								Từ Điển Tiếng Huế
+							</a>
+							  của Bác Sĩ Bùi Minh Đức.
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Chương Trình Crowdsourced cho Tiếng Huế</h2>
+					<p style="color: rgb(0, 153, 255)">
+						Do người Huế, nam hay nữ, già hay trẻ, trong hay ngoài nước, cùng đóng góp
+					</p>
+					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+						&ldquo;Một cây làm chẳng nên non, <br>Ba cây chụm lại nên hòn núi cao&rdquo;
+					</blockquote>
+				</section>
+				<section>
+					<h2>Mozilla’s 
+						<a href="https://commonvoice.mozilla.org/vi" onclick="window.open(this.href, 'popup', 'width=600,height=400,left=200,top=200,resizable=yes'); return false;">
+							Common Voice
+						</a>
+					</h2>
+					<ul>
+						<li><b>Common Voice</b> là một dự án do cộng đồng đóng góp nhằm tạo ra những tập dữ liệu ngôn ngữ giọng nói đại qui mô, miễn phí và đa dạng để đào tạo công nghệ giọng nói tự động.</li>
+						<li class="fragment fade-up">Tình nguyện viên đóng góp bằng cách tự ghi âm các câu đọc, hoặc nghe lại các bản ghi âm của những người khác.</li>
+						<li class="fragment fade-up">Cuối năm 2024, Common Voice đã hỗ trợ 133 ngôn ngữ khác nhau.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Mozilla’s 
+						<a href="https://commonvoice.mozilla.org/vi" onclick="window.open(this.href, 'popup', 'width=600,height=400,left=200,top=200,resizable=yes'); return false;">
+							Common Voice
+						</a>
+					</h2>
+					<ul>
+						<li>Bản phát hành bộ dữ liệu tiếng Việt đầu tiên được thực hiện vào giữa năm 2020.</li>
+						<li class="fragment fade-left"><p style="color: rgb(0, 153, 255)">Hiện tại, chưa có bộ dữ liệu nào cho tiếng Huế.</p></li>
+					</ul>
+				</section>
+				<section>
+					<h2><a href="https://www.google.com/books/edition/T%E1%BB%AB_%C4%91i%E1%BB%83n_ti%E1%BA%BFng_Hu%E1%BA%BF/B8NkAAAACAAJ?hl=en" onclick="window.open(this.href, 'popup', 'width=600,height=400,left=200,top=200,resizable=yes'); return false;">
+								Từ Điển Tiếng Huế
+							</a>
+					</h2>
+					<h3>của Bác Sĩ Bùi Minh Đức</h3>
+					<img src="assets/TuDienTiengHue-BMD.jpg" width="30%"alt="Tự Diển Tiếng Huế của Bùi Minh Đức">
+				</section>
+				<section>
+					<h2><a href="https://www.google.com/books/edition/T%E1%BB%AB_%C4%91i%E1%BB%83n_ti%E1%BA%BFng_Hu%E1%BA%BF/B8NkAAAACAAJ?hl=en" onclick="window.open(this.href, 'popup', 'width=600,height=400,left=200,top=200,resizable=yes'); return false;">
+								Từ Điển Tiếng Huế
+							</a>
+					</h2>
+					<h3>của Bác Sĩ Bùi Minh Đức</h3>
+					<ul>
+						<li>Bác Sĩ Bùi Minh Đức sinh ra ở Huế, là người thành đạt trong lãnh vực Y Khoa chuyên ngành Tai Mũi Họng.</li>
+						<li>Qua cuốn Từ Điển Tiếng Huế , tác giả muốn ghi lại tiếng nói trung thực của người dân xứ Huế và Thừa Thiên.</li>
+					</ul>
+				</section>
+				<section>
+					<h2><a href="https://www.google.com/books/edition/T%E1%BB%AB_%C4%91i%E1%BB%83n_ti%E1%BA%BFng_Hu%E1%BA%BF/B8NkAAAACAAJ?hl=en" onclick="window.open(this.href, 'popup', 'width=600,height=400,left=200,top=200,resizable=yes'); return false;">
+								Từ Điển Tiếng Huế
+							</a>
+					</h2>
+					<h3>của Bác Sĩ Bùi Minh Đức</h3>
+					<ul>
+						<li>Đây là một công trình sưu tập các nét đặc thù của tiếng Huế và Thừa Thiên để chúng khỏi phôi pha với ngày tháng.</li>
+						<li><p style="color: rgb(0, 153, 255)">Từ Điển Tiếng Huế - Tập 1 do nhà in Tâm An xuất bản vào năm 2001 gồm 531 trang, thu thập hàng ngàn câu văn điển hình tiếng Huế.</p></li>
+					</ul>
+				</section>
+				<section>
+					<h2>Từ Điển Tiếng Huế trên Common Voice</h2>
+					<ul>
+						<li>Với sự đồng ý của BS Bùi Minh Đức, những câu văn điển hình tiếng Huế trong Từ Điển Tiếng Huế đã bắt đầu được đưa lên Common Voice.</li>
+						<li>Cộng đồng người Huế trên khắp thế giới có thể tham gia ghi âm giọng Huế của mình.</li>
+						<li>Common Voice sẽ thu thập những thu âm tiếng Huế và phát hành Tập Dữ Liệu Tiếng Huế trong tương lai.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Làm Sao Để Tham Gia Chương Trình Này</h2>
+					<ul>
+						<li>Sau đây là những việc mà bạn có thể làm trên Common Voice để giúp cho chương trình này:</li>
+						<ul>
+							<li style="color: rgb(0, 153, 255)">Ghi âm</li>
+							<li class="fragment fade-up" style="color: rgb(0, 153, 255)">Nghe</li>
+							<li class="fragment fade-up" style="color: rgb(0, 153, 255)">Viết</li>
+							<li class="fragment fade-up" style="color: rgb(0, 153, 255)">Xem xét</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<h3>“Đăng Ký” Trên Common Voice</h3>
+					<ul>
+						<li>Để dùng 
+							<a href="https://commonvoice.mozilla.org/vi" onclick="window.open(this.href, 'popup', 'width=600,height=400,left=200,top=200,resizable=yes'); return false;">
+								Common Voice
+							</a>
+							, bạn cần đăng ký.
+						</li>
+						<ul>
+							<li>Vào trang 
+								<a href="" onclick="window.open(this.href, 'popup', 'width=600,height=400,left=200,top=200,resizable=yes'); return false;">
+									Common Voice<small>https://commonvoice.mozilla.org/vi</small>
+								</a>
+							</li>
+							<li>Nhấn vào nút <em>Đăng Nhập/Đăng Ký</em></li>
+							<li>Điền Email của bạn</li>
+							<li>Chọn một mật khẩu riêng</li>
+							<li>Điền tên và chọn ngôn ngữ ở trang Hồ Sơ</li>
+							<li>Chọn tiếng Việt là ngôn ngữ chính, và tiếng Huế là biến thể</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<h3>Trang “Đăng Ký” Trên Common Voice</h3>
+					<img src="assets/ghinhap.jpg" width="50%" alt="Common Voice - Đăng Ký">
+				</section>
+				<section>
+					<h3>Trang “Nói” Trên Common Voice</h3>
+					<ul>
+						<li>Để ghi âm trên Common Voice bạn vào trang 
+							<a href="https://commonvoice.mozilla.org/vi/speak" onclick="window.open(this.href, 'popup', 'width=600,height=400,left=200,top=200,resizable=yes'); return false;">
+								Nói<small>https://commonvoice.mozilla.org/vi/speak</small>
+							</a>
+						</li>
+						<ul>
+							<li>Trang này giúp bạn ghi âm giọng nói của bạn.</li>
+							<li>Bạn sẽ đọc câu trên trang này sau khi nhấn vào icon microphone
+								<p  style="text-align: center;">
+									<img src="assets/microphone.jpg" alt="microphone" width="50" height="50" style="margin-top: 0; margin-bottom: 0; padding-left: 20;">
+								</p>
+							</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<h3>Trang "Nói” Trên Common Voice</h3>
+					<img src="assets/noi.jpg"  width="50%" alt="Common Voice - Noi">
+				</section>
+				<section>
+					<h3>Trang “Nghe” Trên Common Voice</h3>
+					<ul>
+						<li>Bạn nghe những câu đã được người khác ghi âm trên trang 
+							<a href="https://commonvoice.mozilla.org/vi/listen" onclick="window.open(this.href, 'popup', 'width=600,height=400,left=200,top=200,resizable=yes'); return false;">
+								Nghe<small>https://commonvoice.mozilla.org/vi/listen</small>
+							</a>
+						</li>
+						<ul>
+							<li>Nếu họ phát âm chính xác thì bạn chấp thuận bằng cách nhấn vào icon
+								<p style="text-align: center;"><img src="assets/co.jpg" alt="co" width="150" height="50" ></p>
+							</li>
+							<li>Nếu không thì nhấn vào icon
+								<p style="text-align: center;"><img src="assets/khong.jpg" alt="khong" width="150" height="50"></p>
+							</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<h3>Trang "Nghe” Trên Common Voice</h3>
+					<img src="assets/nghe.jpg"  width="50%" alt="Common Voice - Nghe">
+				</section>
+				<section>
+					<h3>Trang “Viết” Trên Common Voice</h3>
+					<ul>
+						<li>Bạn đề nghị viết câu mới trên trang 
+							<a href="https://commonvoice.mozilla.org/vi/write" onclick="window.open(this.href, 'popup', 'width=600,height=400,left=200,top=200,resizable=yes'); return false;">
+								Viết<small>https://commonvoice.mozilla.org/vi/write</small>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Trang "Viết” Trên Common Voice</h3>
+					<img src="assets/viet.jpg"  width="50%" alt="Common Voice - Viet">
+				</section>
+				<section>
+					<h3>Trang “Xem Xét” Trên Common Voice</h3>
+					<ul>
+						<li>Trên trang  
+							<a href="https://commonvoice.mozilla.org/vi/review" onclick="window.open(this.href, 'popup', 'width=600,height=400,left=200,top=200,resizable=yes'); return false;">
+								Xem Xét<small>https://commonvoice.mozilla.org/vi/review</small>
+							</a>
+							, bạn kiểm chứng xem một câu đã viết có đúng về mặt ngôn ngữ không
+						</li>
+						<ul>
+							<li>Nếu có thì bấm vào
+								<p style="text-align: center; margin-top: 0; margin-bottom: 0;"><img src="assets/co.jpg" alt="co" height="40" ></p>
+							</li>
+							<li>Nếu không thì bấm vào
+								<p style="text-align: center;; margin-top: 0; margin-bottom: 0;"><img src="assets/khong.jpg" alt="khong"  height="40" ></p>
+							</li>
+							<li>Nếu không chắc thì bấm vào
+								<p style="text-align: center;; margin-top: 0; margin-bottom: 0;"><img src="assets/boqua.jpg" alt="boqua" height="40" ></p>
+							</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<h3>Trang “Xem Xét” Trên Common Voice</h3>
+					<img src="assets/xemxet.jpg"  width="50%" alt="Common Voice - Xem Xet">
+				</section>
+				<section>
+					<h2>Xin Vui Lòng Đóng Góp và Quảng Bá Chương Trình Này</h2>
+				</section>
+				<section>
+					<h2>Đóng Góp</h2>
+						<ul>
+							<li>Xin chọn một mục tiêu khả thi cho chính bạn. Thí dụ:</li>
+							<ul>
+								<li>Nói - 10 câu mỗi ngày trong vòng 1 tuần</li>
+								<li>Nghe - 10 câu mỗi ngày trong vòng 1 tuần</li>
+								<li>Xem xét - 10 câu mỗi ngày trong vòng 1 tuần</li>
+							</ul>
+						</ul>
+				</section>
+				<section>
+					<h2>Quảng Bá</h2>
+					<ul>
+						<li>Chuyển tập tài liệu này cho gia đình và thân hữu người Huế ở Việt Nam hay ngoại quốc</li>
+						<li class="fragment fade-up">Nhờ họ đóng góp cho chương trình (Nói, Nghe, Xem Xét)</li>
+						<li class="fragment fade-up">Nhờ họ chuyển thông tin này cho người Huế trên toàn thế giới</li>
+					</ul>
+				</section>
+				<section>
+					<h3>
+						Kỹ Thuật Trí Tuệ Nhân Tạo Cho Tiếng Huế
+						cần
+					</h3>
+					<h2 style="color: rgb(0, 153, 255)">
+						<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+							&ldquo;Giọng nói của người Huế trên toàn thế giới&rdquo;
+						</blockquote>
+					</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
